@@ -1,0 +1,113 @@
+{
+  "overall_performance": {
+    "Cardio-Advisor Agent": {
+      "Accuracy": 0.694,
+      "GC": 1.0,
+      "PI": 0.81,
+      "SVR": 0.0,
+      "Conflict_Resolution_Rate": 1.0,
+      "Avg_Confidence": 0.56198632602645
+    },
+    "w/o Conflict": {
+      "Accuracy": 0.694,
+      "GC": 1.0,
+      "PI": 0.81,
+      "SVR": 0.0,
+      "Conflict_Resolution_Rate": 1.0,
+      "Avg_Confidence": 0.56198632602645
+    },
+    "RAG-only": {
+      "Accuracy": 0.686,
+      "GC": 0.7065800000000001,
+      "PI": 0.42,
+      "SVR": 0.07
+    },
+    "Single Guideline Rule": {
+      "Accuracy": 0.617,
+      "GC": 0.62934,
+      "PI": 0.31,
+      "SVR": 0.04
+    }
+  },
+  "conflict_analysis": {
+    "num_conflict_cases": 561,
+    "accuracy": 0.6541889483065954,
+    "resolution_rate": 1.0
+  },
+  "risk_stratification": {
+    "low": {
+      "single": 0.710093896713615,
+      "rag": 0.710093896713615,
+      "proposed": 0.710093896713615,
+      "count": 852
+    },
+    "medium": {
+      "single": 0.43478260869565216,
+      "rag": 0.616600790513834,
+      "proposed": 0.6376811594202898,
+      "count": 759
+    },
+    "high": {
+      "single": 0.7690288713910761,
+      "rag": 0.7690288713910761,
+      "proposed": 0.7690288713910761,
+      "count": 381
+    },
+    "very_high": {
+      "single": 0.75,
+      "rag": 0.75,
+      "proposed": 0.75,
+      "count": 8
+    }
+  },
+  "ablation_study": {
+    "Full Model": {
+      "Accuracy": 0.694,
+      "GC": 1.0,
+      "PI": 0.81,
+      "SVR": 0.0,
+      "Conflict_Resolution_Rate": 1.0,
+      "Avg_Confidence": 0.56198632602645
+    },
+    "w/o Conflict": {
+      "Accuracy": 0.694,
+      "GC": 1.0,
+      "PI": 0.81,
+      "SVR": 0.0,
+      "Conflict_Resolution_Rate": 1.0,
+      "Avg_Confidence": 0.56198632602645
+    },
+    "w/o Personalization": {
+      "Accuracy": 0.694,
+      "GC": 1.0,
+      "PI": 0.81,
+      "SVR": 0.0,
+      "Conflict_Resolution_Rate": 1.0,
+      "Avg_Confidence": 0.56198632602645
+    },
+    "w/o Planning": {
+      "Accuracy": 0.6305,
+      "GC": 0.9985,
+      "PI": 0.958,
+      "SVR": 0.0,
+      "Conflict_Resolution_Rate": 1.0,
+      "Avg_Confidence": 0.5602288729120111
+    },
+    "w/o Personalization Weight": {
+      "Accuracy": 0.694,
+      "GC": 1.0,
+      "PI": 0.81,
+      "SVR": 0.0,
+      "Conflict_Resolution_Rate": 1.0,
+      "Avg_Confidence": 0.56198632602645
+    },
+    "w/o Multi-Source Guidelines": {
+      "Accuracy": 0.6305,
+      "GC": 0.9985,
+      "PI": 0.958,
+      "SVR": 0.0,
+      "Conflict_Resolution_Rate": 1.0,
+      "Avg_Confidence": 0.5602288729120111
+    }
+  }
+}
